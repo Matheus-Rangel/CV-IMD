@@ -1,0 +1,8 @@
+Questão 1:
+        As celulas receptoras na retina são divididas em cones e bastonetes.
+    Os bastonetes estãs em mais abundancia na retina porém eles não diferenciam
+    as cores somente a variação de luminozidade, por tanto é atravez dos cones que 
+    podemos diferenciar as cores. Eles são divididos em 3 categorias:
+        - S: Mais sensiveis a cor azul
+        - M: Mais sensiveis a cor verde
+        - L: Mais sensiveis a cor vermelha
