@@ -21,7 +21,7 @@ def img_blue(img):
     return img_out
 
 if __name__ == "__main__":
-    img_bgr = cv2.imread('messi.jpg', )
-    cv2.imwrite('messired.png',img_red(img_bgr))
-    cv2.imwrite('messigreen.png',img_green(img_bgr))
-    cv2.imwrite('messiblue.png',img_blue(img_bgr))
+    img_bgr = cv2.imread('img/messi.jpg', )
+    cv2.imwrite('img/messired.jpg',img_red(img_bgr))
+    cv2.imwrite('img/messigreen.jpg',img_green(img_bgr))
+    cv2.imwrite('img/messiblue.jpg',img_blue(img_bgr))
