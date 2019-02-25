@@ -1,4 +1,4 @@
-Questão 1:
+Questão 1 e 2:
         As celulas receptoras na retina são divididas em cones e bastonetes.
     Os bastonetes estãs em mais abundancia na retina porém eles não diferenciam
     as cores somente a variação de luminozidade, por tanto é atravez dos cones que 
@@ -6,3 +6,37 @@ Questão 1:
         - S: Mais sensiveis a cor azul
         - M: Mais sensiveis a cor verde
         - L: Mais sensiveis a cor vermelha
+        Quando uma luz amarela é projetada na retina os cones L e M são estimulados
+
+Questão 3:
+        Tres programas foram feitos, um para cada item e todas a fotos lidas e processadas
+    estão na pasta 'Q3/img/'. 
+        O rgb_separation.py le a imagem messi.jpg e gera 3 imagens com
+    os canais de cores separados(messigreen.jpg, messired.jpg, messiblue.jpg).
+        O inversion.py le a imagem a messi.jpg e inverte horizontalmente gerando a imagem
+    messiinverted.jpg.
+        O blending.py le a imagem messi.jpg e messiinverted.jpg e aplica o blending entre elas
+    gerando a imagem messiblending.jpg.
+        O gradient.py recebe 3 valores de entrada, o primeiro e segundo é a resolucao em linha
+    por coluna respectivamente e o terceiro é a direcao do gradient, e aplica o efeito de 
+    gradiente na imagem messi.jpg gerando messigr.jpg
+
+Questão 4:
+    a)
+        P1 E P4 são para imagens PBM no formato ASCII e binario respectivamente, ja o 
+        P2 e P3 são para PGM e P3 e P5 são para PPM
+    b)
+        a imagem messi.pbm foi gerada
+    c)
+        No binario não é necessario uso de caracteres de espaco entre os valores 
+        dos canais de cores fazendo com que a imagem acabe ocupando menos espaco de disco
+    d)
+        O formato PBM precisa utilizar apenas um bit por pixel, ja o PPM tem 3 canais 
+        de cores por pixel e cada canal o valor varia de 0 a 255, 1 byte.
+
+Questão 5:
+    BMP, JPG, PNG são bitmaps e SVG, EPS são vetoriais.
+
+Questão 6
+    denoise.py ler o grupo de imagens da pasta Q6/img e executa a funcao fastNlMeansDenoisingMulti
+do opencv gerando a imagem denoise.jpg
