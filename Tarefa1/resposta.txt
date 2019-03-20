@@ -1,0 +1,4 @@
+Resolvi refazer a tarefa considerando os defeitos da ultima submissao.
+Dessa vez alterei aumentei consideravelmente o brilho da imagem com as barras
+pretas e implementei os filtros de borda com os kernels de sobel e prewitt
+em funcoes separadas.
