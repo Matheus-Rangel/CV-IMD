@@ -34,4 +34,4 @@ if __name__ == "__main__":
         imgs.append(cv2.imread('img/' + img, 0))
     cv2.imwrite('denoise/denoise1.jpg', denoise1(imgs))
     cv2.imwrite('denoise/denoise2.jpg', denoise2(imgs))
-    plt.imsave('denoise/denoise_colored.jpg', denoise2(imgs)*5, cmap=colormap())
+    plt.imsave('denoise/denoise_colored.jpg', denoise2(imgs)*5, cmap='plasma')
