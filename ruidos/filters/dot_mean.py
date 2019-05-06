@@ -11,10 +11,10 @@ def dot_mean(img_in, kernel_rad):
             x2 = img.shape[0] if x2>img.shape[0] else x2
             
             y1 = j - kernel_rad
-            y1 = 0 if y1 < 0 else x1
+            y1 = 0 if y1 < 0 else y1
             
             y2 = j + 1 + kernel_rad
             y2 = img.shape[1] if y2>img.shape[1] else y2 
             neighbors = img[x1:x2,y1:y2]
-            img[i][j] = (neighbors.min() + neighbors.max())/2
+            img[i][j] = (int(neighbors.min()) + int(neighbors.max()))/2
     return img

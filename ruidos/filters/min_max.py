@@ -11,7 +11,7 @@ def min(img_in, kernel_rad):
             x2 = img.shape[0] if x2>img.shape[0] else x2
             
             y1 = j - kernel_rad
-            y1 = 0 if y1 < 0 else x1
+            y1 = 0 if y1 < 0 else y1
             
             y2 = j + 1 + kernel_rad
             y2 = img.shape[1] if y2>img.shape[1] else y2 
@@ -19,7 +19,7 @@ def min(img_in, kernel_rad):
             img[i][j] = neighbors.min()
     return img
 
-def max(img, kernel_rad):
+def max(img_in, kernel_rad):
     img = img_in.copy()
     for i in range(img.shape[0]):
         for j in range(img.shape[1]):
@@ -30,7 +30,7 @@ def max(img, kernel_rad):
             x2 = img.shape[0] if x2>img.shape[0] else x2
             
             y1 = j - kernel_rad
-            y1 = 0 if y1 < 0 else x1
+            y1 = 0 if y1 < 0 else y1
             
             y2 = j + 1 + kernel_rad
             y2 = img.shape[1] if y2>img.shape[1] else y2 
