@@ -5,7 +5,7 @@ import os
 path = 'segundoConjunto'
 path_dest = 'resultados'
 if __name__ == "__main__":
-    img_name = 'ruidoGaussiano.jpg'
+    img_name = 'ruidoSalPimenta.jpg'
     img = cv2.imread(os.path.join(path, img_name),0)
     directory = os.path.join(path_dest, img_name.split('.')[0])
     if not os.path.exists(directory):

@@ -13,10 +13,10 @@ def harmonic_mean(img_in, kernel_rad):
             
             y1 = j - kernel_rad
             y1 = 0 if y1 < 0 else y1
-            
+
             y2 = j + 1 + kernel_rad
             y2 = img.shape[1] if y2>img.shape[1] else y2 
-            neighbors = img[x1:x2,y1:y2] 
+            neighbors = img_in[x1:x2,y1:y2].astype(float)
             neighbors = np.power(neighbors, -1)
             img[i][j] = (neighbors.shape[0]*neighbors.shape[1])/np.sum(neighbors,dtype=float)
     return img.astype(int)

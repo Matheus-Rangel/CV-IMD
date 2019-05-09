@@ -15,7 +15,7 @@ def median(img_in, kernel_rad):
             y2 = j + 1 + kernel_rad
             y2 = img.shape[1] if y2>img.shape[1] else y2 
             
-            neighbors = img[x1:x2,y1:y2] 
+            neighbors = img_in[x1:x2,y1:y2] 
             neightbors = np.reshape(neighbors, neighbors.shape[0] * neighbors.shape[1])
             img[i][j] = np.median(neighbors)
     return img

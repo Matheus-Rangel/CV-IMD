@@ -15,7 +15,7 @@ def alpha_mean(img_in, kernel_rad, d):
             
             y2 = j + 1 + kernel_rad
             y2 = img.shape[1] if y2>img.shape[1] else y2 
-            neighbors = img[x1:x2,y1:y2]
+            neighbors = img_in[x1:x2,y1:y2]
             neighbors = np.reshape(neighbors,neighbors.shape[0]*neighbors.shape[1])
             for i in range(d):
                 neighbors[neighbors.argmax()] = -1
